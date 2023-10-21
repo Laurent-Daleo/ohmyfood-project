@@ -1,0 +1,85 @@
+.cards{
+    @extend %flexcolum-mid;
+    width: calc(100% - 5px);
+    height: 72px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    background-color: $white;
+
+}
+.card__content{
+    width: calc(100% - 109px);
+    position: relative;
+    transition: linear .3s;
+    margin: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    &:hover + .price__content{
+        right: 0;
+    }
+}
+    .cards__title{
+        height: 21px;
+        font-family: $font-roboto;
+        font-size: 18px;
+        font-weight: 500;
+        .cards__subtitle{
+            height: 19px;
+            font-family: $font-roboto;
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+.cards__entrees,
+.cards__plats,
+.cards__desserts{
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+input[name="menu__entrees"],
+input[name="menu__plats"],
+input[name="menu__desserts"] {
+    display: none;
+}
+input[name="menu__entrees"]:checked +label .price__content,
+input[name="menu__plats"]:checked +label .price__content,
+input[name="menu__desserts"]:checked +label .price__content{
+    right: 0;
+}
+.price__content{
+    display:flex ;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    position: absolute;
+    right: -70px;
+    display: flex;
+    transition: linear .3s;
+    font-family:$font-roboto ;
+    font-size: 15px;
+    font-weight: bold;
+    .price__value{
+        display: block;
+        position: relative;
+        top: 10px;
+        right: 20px;
+    }
+}
+.price__valided{
+    width: 59px;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    background-color: $green-light;
+    i{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 35px;
+        color: $white;
+        }
+    }
