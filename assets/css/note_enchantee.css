@@ -73,7 +73,7 @@ a {
   width: 100%;
 }
 
-/*      Mobile-first   page delice des sens   */
+/*      Mobile-first   page note des sens   */
 /* Variables   */
 /* media       */
 .btn__cmder, .cmder, .cards, .header__container, .vegetable, .loader-content .loadertxt, .loader-content, .loader__cooking {
@@ -253,28 +253,28 @@ a {
 
 .page__menu {
   width: 100%;
-  height: 1120px;
+  height: 1207px;
 }
 
 .section {
   width: 100%;
 }
-.section.section__delice {
+.section.section__note {
   width: 100%;
   position: relative;
 }
 
-.delice__menu {
+.note__menu {
   position: relative;
   width: 100%;
-  height: 1155px;
+  height: 1238px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   background-color: #f6f6f6;
   bottom: 35px;
 }
 
-.delice__title {
+.note__title {
   position: relative;
   width: 100%;
   height: 27px;
@@ -287,7 +287,7 @@ a {
   transform: translateX(5000px);
   animation-delay: 3s;
 }
-.delice__title .title__delice {
+.note__title .title__note {
   margin-left: 17px;
 }
 
@@ -714,7 +714,7 @@ input[name=menu__desserts]:checked + label .price__content {
   }
 }
 @media only screen and (max-width: 420px) {
-  .delice__title {
+  .note__title {
     font-size: 19px;
   }
 }
@@ -723,16 +723,16 @@ input[name=menu__desserts]:checked + label .price__content {
   .header__container {
     max-width: 1440px;
   }
-  .section__delice {
+  .section__note {
     align-items: center;
   }
-  .delice__title {
+  .note__title {
     text-align: center;
   }
   .heart__anim {
     right: 300px;
   }
-  .delice__menu {
+  .note__menu {
     width: 1055px;
   }
   .cards {
@@ -746,4 +746,4 @@ input[name=menu__desserts]:checked + label .price__content {
   .food__titles {
     margin-left: 210px;
   }
-}/*# sourceMappingURL=delice.css.map */
+}/*# sourceMappingURL=note_enchantee.css.map */
