@@ -716,31 +716,32 @@ input[name=menu__desserts]:checked + label .price__content {
   }
 }
 /*          Version Desktop   */
-@media screen and (min-width: 768px) {
-  .header__container {
-    max-width: 1440px;
-  }
-  .section__note {
-    align-items: center;
-  }
-  .note__title {
-    text-align: center;
-  }
-  .heart__anim {
-    right: 300px;
-  }
-  .note__menu {
-    width: 1055px;
-  }
-  .cards {
-    width: calc(100% - 420px);
-  }
-  .entree, .plats, .desserts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .food__titles {
-    margin-left: 210px;
-  }
+.section__note {
+  align-items: center;
+}
+
+.note__title {
+  text-align: center;
+}
+
+.heart__anim {
+  right: 300px;
+}
+
+.note__menu {
+  width: 1055px;
+}
+
+.cards {
+  width: calc(100% - 420px);
+}
+
+.entree, .plats, .desserts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food__titles {
+  margin-left: 210px;
 }/*# sourceMappingURL=note_enchantee.css.map */
