@@ -448,7 +448,8 @@ input:checked + label .heart-clip {
   font-size: 18px;
   font-weight: 500;
 }
-.cards__title .cards__subtitle {
+
+.cards__subtitle {
   height: 19px;
   font-family: "Roboto";
   font-size: 15px;
