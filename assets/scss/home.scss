@@ -249,7 +249,7 @@
 }
 @for $i from 1 through 4 {
   .restaurant__cards:nth-child(#{$i}){
-    animation-delay: 1ms + $i;
+    animation-delay: 1s + $i;
   }
 }
 @keyframes restaurant__cards {

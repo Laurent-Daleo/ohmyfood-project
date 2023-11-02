@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*    import des variables */
 /* Variables   */
 /* media       */
@@ -70,7 +69,7 @@ a {
   width: 100%;
 }
 
-/*      Mobile-first   page note du goût   */
+/*      Mobile-first   page note des sens   */
 /* Variables   */
 /* media       */
 .btn__cmder, .cmder, .cards, .header__container, .vegetable, .loader-content .loadertxt, .loader-content, .loader__cooking {
@@ -241,7 +240,7 @@ a {
 
 .page__menu {
   width: 100%;
-  height: 1120px;
+  height: 1207px;
 }
 
 .section {
@@ -255,7 +254,7 @@ a {
 .note__menu {
   position: relative;
   width: 100%;
-  height: 1155px;
+  height: 1238px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   background-color: #f6f6f6;
@@ -702,28 +701,32 @@ input[name=menu__desserts]:checked + label .price__content {
   }
 }
 /*          Version Desktop   */
-@media screen and (min-width: 768px) {
-  .section__note {
-    align-items: center;
-  }
-  .note__title {
-    text-align: center;
-  }
-  .heart__anim {
-    right: 300px;
-  }
-  .note__menu {
-    width: 1055px;
-  }
-  .cards {
-    width: calc(100% - 420px);
-  }
-  .entree, .plats, .desserts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .food__titles {
-    margin-left: 210px;
-  }
-}/*# sourceMappingURL=note_enchantee.css.map */
+.section__note {
+  align-items: center;
+}
+
+.note__title {
+  text-align: center;
+}
+
+.heart__anim {
+  right: 300px;
+}
+
+.note__menu {
+  width: 1055px;
+}
+
+.cards {
+  width: calc(100% - 420px);
+}
+
+.entree, .plats, .desserts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food__titles {
+  margin-left: 210px;
+}/*# sourceMappingURL=note_enchanteeold.css.map */
