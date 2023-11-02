@@ -585,7 +585,7 @@ input[name=menu__desserts]:checked + label .price__content {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(193deg, #ac7cd5 11%, #fface8 124%);
+  background: linear-gradient(193deg, #fface8 11%, #ac7cd5 124%);
   opacity: 0;
   z-index: 1;
   transition: opacity 0.5s;
@@ -598,17 +598,19 @@ input[name=menu__desserts]:checked + label .price__content {
 .footer {
   background-color: #353535;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .footer__general {
   width: 100%;
   height: 186px;
   padding: 0px 0px 22px 25px;
+  box-sizing: border-box;
 }
-.footer__general .footer__title {
+
+.footer__title {
   width: 100%;
   height: 27px;
-  box-sizing: border-box;
 }
 
 .title__footer {

@@ -1065,17 +1065,19 @@ input:checked + label .heart-clip {
 .footer {
   background-color: #353535;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .footer__general {
   width: 100%;
   height: 186px;
   padding: 0px 0px 22px 25px;
+  box-sizing: border-box;
 }
-.footer__general .footer__title {
+
+.footer__title {
   width: 100%;
   height: 27px;
-  box-sizing: border-box;
 }
 
 .title__footer {
