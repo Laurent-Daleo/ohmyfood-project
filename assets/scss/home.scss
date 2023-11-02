@@ -28,61 +28,19 @@
   height: 63px;
   @extend %flexcolum-mid;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  z-index: 999;
-  transform: translateY(5000px);
-  animation: 1s header__logo linear;
-  animation-fill-mode: forwards;
-  animation-delay: $delay;
+
+
 }
 .logo__img {
   width: 197px;
   height: 36px;
 }
-
-@keyframes header__logo {
-  0% {
-    transform: translateY(5000px);
-  }
-  25% {
-    transform: translateY(500px);
-  }
-  50%{
-    transform: translateY(250px);
-  }
-  75%{
-    transform: translateY(50px)
-  }
-  100%{
-    transform: translateY(0px)
-  }
-}
-
 .header__location{
   width: 100%;
   background-color: $grey;
-  transform: translateY(5000px);
-  animation: 1s header__location linear;
-  animation-fill-mode: forwards;
-  animation-delay: $delay + 0.5;
   z-index: 1;
 }
-@keyframes header__location {
-  0% {
-    transform: translateY(5000px);
-  }
-  25% {
-    transform: translateY(500px);
-  }
-  50%{
-    transform: translateY(250px);
-  }
-  75%{
-    transform: translateY(50px)
-  }
-  100%{
-    transform: translateY(0px)
-  }
-}
+
   .form{
     @extend %flex-mid;
      &.form__location{
@@ -124,28 +82,18 @@
   @extend %flexcolum-mid;
   width: 275px;
   height: 68px;
-  margin: 39px 58px 0px 42px;
   font-family: $font-roboto;
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  transform: translateY(5000px);
-  animation: 1.2s header__titles linear;
-  animation-fill-mode: forwards;
-  animation-delay: $delay + 1;
 }
 .main__title p {
-  margin: 0px 26px 0px 34px;
   width: 100%;
   height: 46px;
   font-family: $font-roboto;
   font-size: 18px;
   font-weight: 300;
   text-align: center;
-  transform: translateY(5000px);
-  animation: 1.2s header__titles linear;
-  animation-fill-mode: forwards;
-  animation-delay: $delay + 1.5;
 }
 .header__button {
   position: relative;
@@ -157,14 +105,11 @@
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   margin: 27px 75px 57px 82px;
   z-index: 1;
-  transform: translateY(5000px);
-  animation: 1.2s header__titles linear;
-  animation-fill-mode: forwards;
-  animation-delay: $delay + 1.8;
+
   &:hover {
     &::after{
         opacity: 1;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
+       
     }
 }
   &::after{
@@ -183,23 +128,7 @@
   transition: opacity .5s;
 }
 }
-@keyframes header__titles {
-  0% {
-    transform: translateY(5000px);
-  }
-  25% {
-    transform: translateY(500px);
-  }
-  50%{
-    transform: translateY(250px);
-  }
-  75%{
-    transform: translateY(50px)
-  }
-  100%{
-    transform: translateY(0px)
-  }
-}
+
   .btn {
     @extend %flexcolum-mid;
     width: 180px;
@@ -224,16 +153,12 @@
   z-index: 1;
   width: 100%;
   height: 440px;
-
-
+  box-sizing: border-box;
 }
 .function__title {
   width: 100%;
   @extend %flex-st-cent;
-  transform: translateY(5000px);
-  animation: 1.2s function__title linear;
-  animation-fill-mode: forwards;
-  animation-delay: $delay + 0.8;
+
   
   .title__function {
     font-family: $font-roboto;
@@ -242,23 +167,7 @@
     margin-left: 20px;
   }
 }
-@keyframes function__title {
-  0% {
-    transform: translateY(5000px);
-  }
-  25% {
-    transform: translateY(500px);
-  }
-  50%{
-    transform: translateY(250px);
-  }
-  75%{
-    transform: translateY(50px)
-  }
-  100%{
-    transform: translateY(0px)
-  }
-}
+
 .function__info {
   @extend %flexcolum-mid;
   width: 100%;
@@ -287,31 +196,7 @@
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     margin-top: 26px;
-    transform: translateY(5000px);
-    animation:function__order 1s linear;
-    animation-fill-mode: forwards;
-}
-@for $i from 1 through 3 {
-  .function__order:nth-child(#{$i}){
-    animation-delay: 4s + $i;
-  }
-}
-@keyframes function__order {
-  0% {
-    transform: translateY(5000px);
-  }
-  25% {
-    transform: translateY(500px);
-  }
-  50%{
-    transform: translateY(250px);
-  }
-  75%{
-    transform: translateY(50px)
-  }
-  100%{
-    transform: translateY(0px)
-  }
+ 
 }
 .mobile__icon,
 .list__icon,
@@ -343,10 +228,6 @@
   font-size: 24px;
   font-weight: bold;
   padding-top: 47px;
-  animation: 1s restaurant__cards linear;
-  animation-fill-mode: forwards;
-  transform: translateY(5000px);
-  animation-delay: $delay + 2.5;
 }
 .cards__container{
   @extend %flexcolum-mid;
@@ -368,7 +249,7 @@
 }
 @for $i from 1 through 4 {
   .restaurant__cards:nth-child(#{$i}){
-    animation-delay: 5s + $i;
+    animation-delay: 1ms + $i;
   }
 }
 @keyframes restaurant__cards {
@@ -479,7 +360,8 @@
     }
     .function__title{
       margin-top: 50px;
-      margin-left: 180px;
+      margin-left: 75px;
+      width: 90%;
       .title__function{
         margin: 0;
       }
