@@ -700,7 +700,7 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(193deg, #ac7cd5 -11%, #fface8 124%);
+  background: linear-gradient(193deg, #fface8 -11%, #ac7cd5 124%);
   opacity: 0;
   z-index: -1;
   transition: opacity 0.5s;
